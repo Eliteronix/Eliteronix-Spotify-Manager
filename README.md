@@ -1,3 +1,5 @@
+This repo helps you automatically identify and remove duplicate liked songs in Spotify 
+
 Getting the spotify token with enough rights:
 
 1. Create client https://developer.spotify.com/dashboard
