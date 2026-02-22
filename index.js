@@ -60,6 +60,11 @@ let duplicateIndexes = [];
 		}
 	} else {
 		console.log('No duplicate tracks found in your saved Spotify tracks.');
+
+		// Kill the process if no duplicates are found after 5 seconds
+		setTimeout(() => {
+			process.exit(0);
+		}, 5000);
 	}
 })().catch(console.error);
 
