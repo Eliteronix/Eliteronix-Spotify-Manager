@@ -43,7 +43,7 @@ let duplicateIndexes = [];
 			}
 
 			// Delete the duplicate track from saved tracks
-			const deleteUrl = `https://api.spotify.com/v1/me/tracks?ids=${item.track.id}`;
+			const deleteUrl = `https://api.spotify.com/v1/me/library?uris=${item.track.uri}`;
 
 			await fetch(deleteUrl, {
 				method: 'DELETE',
